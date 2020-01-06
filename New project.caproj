@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description>wayangnew</description>
+    <version>1.0.0.0</version>
+    <author>mr rick</author>
+    <author-email>wayang@wayang.id</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.game.wayang</app-id>
+    <unique-id>20sgdsuwnnmjk</unique-id>
+    <saved-with-version>25500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="bckground" sid="3554421611969666">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\background\cahaya.png" />
+        </object-type>
+        <object-type name="TITLE" sid="1971631414305577">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1872975506317995" speed="5">
+                    <frame duration="1" hotspotX="0.500343" hotspotY="0.501305" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\TITLE.png">
+                        <collision-poly>
+                            <point x="0.0623715" y="0.237598" />
+                            <point x="0.499657" y="0.206266" />
+                            <point x="0.944483" y="0.211488" />
+                            <point x="0.959561" y="0.498695" />
+                            <point x="0.937629" y="0.762402" />
+                            <point x="0.499657" y="0.498695" />
+                            <point x="0.0623715" y="0.762402" />
+                            <point x="0.017135" y="0.498695" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TOMBOLMAIN" sid="846688693912467">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8398789496784599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\TOMBOL MAIN.png">
+                        <collision-poly>
+                            <point x="0.0546559" y="0.148352" />
+                            <point x="0.5" y="0.00549451" />
+                            <point x="0.945344" y="0.148352" />
+                            <point x="0.997976" y="0.5" />
+                            <point x="0.945344" y="0.851648" />
+                            <point x="0.5" y="0.994505" />
+                            <point x="0.0546559" y="0.851648" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TOMBOLKREDIT" sid="9374878055936913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2482266836482593" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\TOMBOL KREDIT.png">
+                        <collision-poly>
+                            <point x="0.0546559" y="0.148352" />
+                            <point x="0.5" y="0.00549451" />
+                            <point x="0.945344" y="0.148352" />
+                            <point x="0.997976" y="0.5" />
+                            <point x="0.945344" y="0.851648" />
+                            <point x="0.5" y="0.994505" />
+                            <point x="0.0546559" y="0.851648" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musuh" sid="6428910725359251">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="9733149649875425" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="1369418452953228">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="8473856879304218">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4292224482216818" speed="5">
+                    <frame duration="1" hotspotX="0.501493" hotspotY="0.501057" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\karakter\musuh.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="player" sid="2300411352188272">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="676489822100072">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="1340972405593776">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1841503090113185" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="1" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\karakter\player.png">
+                        <image-point name="Imagepoint 1" x="0.992" y="0.228972" />
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="jalankanan" pingpong="0" repeatcount="1" repeatto="0" sid="6054682816644767" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="1" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\karakter\player1.png">
+                        <image-point name="Imagepoint 1" x="0.992" y="0.228972" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.504" hotspotY="1" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\karakter\player.png">
+                        <image-point name="Imagepoint 1" x="0.992" y="0.228972" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="jalankana2" pingpong="0" repeatcount="1" repeatto="0" sid="8951126798062154" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <image-point name="Imagepoint 1" x="0.992" y="0.228" />
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="loncat" pingpong="0" repeatcount="1" repeatto="0" sid="2080663291093386" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="1" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\karakter\playerloncat.png">
+                        <image-point name="Imagepoint 1" x="0.992" y="0.228972" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="5144253249374036">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="coin" sid="171188534259187">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8752950025499147" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\coin\coin.png">
+                        <collision-poly>
+                            <point x="0.171429" y="0.176471" />
+                            <point x="0.485714" y="0" />
+                            <point x="0.828571" y="0.176471" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.852941" />
+                            <point x="0.485714" y="1" />
+                            <point x="0.171429" y="0.823529" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ncoin" sid="9265514700354867">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="gambarhati" sid="8596541162891588">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3680870184091014" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\coin\gambarhati.png">
+                        <collision-poly>
+                            <point x="0.102041" y="0.1" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.897959" y="0.1" />
+                            <point x="0.938776" y="0.5" />
+                            <point x="0.693878" y="0.7" />
+                            <point x="0.489796" y="0.94" />
+                            <point x="0.306122" y="0.7" />
+                            <point x="0.0612245" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nyawa" sid="5756359320042595">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="kris" sid="4216317034349727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5845553263943694" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\coin\kris.png">
+                        <collision-poly>
+                            <point x="0.194444" y="0.0463576" />
+                            <point x="0.5" y="0.470199" />
+                            <point x="0.361111" y="0.152318" />
+                            <point x="0.541667" y="0.5" />
+                            <point x="0.513889" y="0.884106" />
+                            <point x="0.5" y="0.890728" />
+                            <point x="0.152778" y="0.963576" />
+                            <point x="0.319444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nkris" sid="6807931677139703">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ground" sid="5773753372183587">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4453502791698348">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\ICAN\Desktop\baru\batik.jpg" />
+        </object-type>
+        <object-type name="loncatanKecil" sid="7959419048006028">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="9699115700773274">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="1678849616602615">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1888189463240577" speed="5">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\loncatan\loncatan kecil.png">
+                        <collision-poly>
+                            <point x="0" y="0.516129" />
+                            <point x="1" y="0.516129" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rintangan" sid="6684600767220798">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1306248445223145">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7357937450563907" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\rintangan\rintangan1.png">
+                        <collision-poly>
+                            <point x="0.715909" y="0.488372" />
+                            <point x="0.776515" y="0.0581395" />
+                            <point x="0.829546" y="0.421512" />
+                            <point x="0.905303" y="0.0174417" />
+                            <point x="0.909091" y="0.430232" />
+                            <point x="0.0795454" y="0.511628" />
+                            <point x="0.0833335" y="0.0697673" />
+                            <point x="0.149148" y="0.459302" />
+                            <point x="0.214252" y="0.0668604" />
+                            <point x="0.288471" y="0.469477" />
+                            <point x="0.352095" y="0.0196221" />
+                            <point x="0.421786" y="0.492369" />
+                            <point x="0.506629" y="0.0581395" />
+                            <point x="0.562973" y="0.453488" />
+                            <point x="0.630682" y="0.0697675" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rintangan2" sid="8803070808292607">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4299315852222832">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6409848748718743" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50165" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\rintangan\rintangan2.png">
+                        <collision-poly>
+                            <point x="0.0435484" y="0.174918" />
+                            <point x="0.5" y="0.174917" />
+                            <point x="0.916129" y="0.171617" />
+                            <point x="0.735484" y="0.49835" />
+                            <point x="0.909677" y="0.815181" />
+                            <point x="0.5" y="0.861386" />
+                            <point x="0.237097" y="0.514852" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rintangan3" sid="5098100890409716">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1563585688297604" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\rintangan\rintangan3.png">
+                        <collision-poly>
+                            <point x="0" y="0.189655" />
+                            <point x="1" y="0.124138" />
+                            <point x="1" y="0.741379" />
+                            <point x="0" y="0.672414" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="portal" sid="209311339437118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7494534909795015" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\portaltandapanah\portal.png">
+                        <collision-poly>
+                            <point x="0.200877" y="0.313699" />
+                            <point x="0.5" y="0.0657534" />
+                            <point x="0.787719" y="0.331507" />
+                            <point x="0.831579" y="0.5" />
+                            <point x="0.810526" y="0.70411" />
+                            <point x="0.5" y="0.915069" />
+                            <point x="0.186842" y="0.708219" />
+                            <point x="0.172807" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas" sid="7321655978452083">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="922600013370262">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7624167570391702" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="2837244073066397">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Sprite" sid="2995481795620502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="675390605510186" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\background\rumahwayang.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="9836502752268349">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite2" sid="325606069947814">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9479517322528593" speed="5">
+                    <frame duration="1" hotspotX="0.500232" hotspotY="0.500246" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\background\rumahwayang.png">
+                        <collision-poly>
+                            <point x="0.190144" y="0.201577" />
+                            <point x="0.499768" y="0.380976" />
+                            <point x="0.83961" y="0.170034" />
+                            <point x="0.93073" y="0.499754" />
+                            <point x="0.874012" y="0.866437" />
+                            <point x="0.499768" y="0.908329" />
+                            <point x="0.170618" y="0.819123" />
+                            <point x="0.112971" y="0.499754" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="4667113128088552">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4210368203338118" speed="5">
+                    <frame duration="1" hotspotX="0.503067" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\awan\awan2.png">
+                        <collision-poly>
+                            <point x="0.245399" y="0.454545" />
+                            <point x="0.496933" y="0.306818" />
+                            <point x="0.736196" y="0.488636" />
+                            <point x="0.895706" y="0.806818" />
+                            <point x="0.496933" y="0.886364" />
+                            <point x="0.134969" y="0.75" />
+                            <point x="0.202454" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kiri" sid="4649879753617926">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359372472930057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\tombol\kiri.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kanan" sid="5049958154894462">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8996225511438851" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\tombol\kanan.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="loncat" sid="5475748071644482">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7222549525546835" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\tombol\lompat.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tembak" sid="8588718507523989">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5149776977855613" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ICAN\Desktop\assetgamesangjuara\tombol\lompat.png">
+                        <collision-poly>
+                            <point x="0" y="0.5" />
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="105242170920229">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="415290523069614">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="443273306394113" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\api-1.png">
+                        <collision-poly>
+                            <point x="0.350961" y="0.415162" />
+                            <point x="0.725961" y="0.411553" />
+                            <point x="0.882211" y="0.561372" />
+                            <point x="0.829327" y="0.871841" />
+                            <point x="0.5" y="0.967509" />
+                            <point x="0.223558" y="0.83213" />
+                            <point x="0.233173" y="0.572202" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\api-2.png">
+                        <collision-poly>
+                            <point x="0.206731" y="0.155235" />
+                            <point x="0.721154" y="0.209386" />
+                            <point x="0.877404" y="0.5" />
+                            <point x="0.776442" y="0.83213" />
+                            <point x="0.5" y="0.967509" />
+                            <point x="0.170673" y="0.871841" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="789228563127066">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="324700676220960">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="937139112613357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\assetgamesangjuara\rintangan\rintangan3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wayangAdipatiKarna" sid="264452758585216">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100353353435829" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\wayang jahat\wayang adipati karna 2.png">
+                        <collision-poly>
+                            <point x="0.296875" y="0.213483" />
+                            <point x="0.5" y="0.157303" />
+                            <point x="0.65625" y="0.247191" />
+                            <point x="0.804688" y="0.5" />
+                            <point x="0.617188" y="0.724719" />
+                            <point x="0.5" y="0.831461" />
+                            <point x="0.351563" y="0.747191" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="penjara" sid="632534564954523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843630084275853" speed="5">
+                    <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\penjara.png">
+                        <collision-poly>
+                            <point x="0.134078" y="0.141176" />
+                            <point x="0.497207" y="0" />
+                            <point x="0.865922" y="0.141176" />
+                            <point x="0.932961" y="0.5" />
+                            <point x="0.932961" y="0.929412" />
+                            <point x="0.497207" y="1" />
+                            <point x="0.0726257" y="0.923529" />
+                            <point x="0.0726257" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background" sid="475917464646488">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="575204306304753" speed="5">
+                    <frame duration="1" hotspotX="0.500701" hotspotY="0.500797" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\background2.png">
+                        <collision-poly>
+                            <point x="0.00981767" y="0.0111643" />
+                            <point x="0.990182" y="0.0111643" />
+                            <point x="0.990182" y="0.988836" />
+                            <point x="0.00981767" y="0.988836" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnReload" sid="709005909133632">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="577885311314675" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\btn reload.png">
+                        <collision-poly>
+                            <point x="0.0677966" y="0.0740741" />
+                            <point x="0.5" y="0.0462963" />
+                            <point x="0.932203" y="0.0740741" />
+                            <point x="0.966102" y="0.5" />
+                            <point x="0.940678" y="0.935185" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.0847458" y="0.907407" />
+                            <point x="0.059322" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="panahNext" sid="951589552665446">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="100584142883521" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\panah next.png">
+                        <collision-poly>
+                            <point x="0.0677966" y="0.0740741" />
+                            <point x="0.5" y="0.0462963" />
+                            <point x="0.932203" y="0.0740741" />
+                            <point x="0.966102" y="0.5" />
+                            <point x="0.940678" y="0.935185" />
+                            <point x="0.5" y="0.944444" />
+                            <point x="0.0847458" y="0.907407" />
+                            <point x="0.059322" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="185036292264616">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="753296572235096" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="915477795613150">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="145398375561393" speed="5">
+                    <frame duration="1" hotspotX="0.473267" hotspotY="0.526316" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\assetsemua\karakterjahat22\2.png">
+                        <collision-poly>
+                            <point x="0.148515" y="0.121951" />
+                            <point x="0.473267" y="0.0346598" />
+                            <point x="0.724752" y="0.169448" />
+                            <point x="0.954455" y="0.526316" />
+                            <point x="1" y="1" />
+                            <point x="0.473267" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.186139" y="0.526316" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="538127378414072">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="745248087866444" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="435391390489103">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="275359590216415" speed="5">
+                    <frame duration="1" hotspotX="0.484127" hotspotY="0.570048" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\assetsemua\karakterjahat22\3.png">
+                        <collision-poly>
+                            <point x="0.0804933" y="0.0919803" />
+                            <point x="0.482301" y="0.042041" />
+                            <point x="0.716344" y="0.19843" />
+                            <point x="0.786763" y="0.566404" />
+                            <point x="0.958671" y="1" />
+                            <point x="0.482301" y="1" />
+                            <point x="0.00800226" y="1" />
+                            <point x="0.331105" y="0.566404" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="209246645581329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545236903737750" speed="5">
+                    <frame duration="1" hotspotX="0.500949" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\assetsemua\karakterbaik22\2.png">
+                        <collision-poly>
+                            <point x="0.3074" y="0.221311" />
+                            <point x="0.499051" y="0.15847" />
+                            <point x="0.635674" y="0.262295" />
+                            <point x="0.874763" y="0.5" />
+                            <point x="0.724858" y="0.801913" />
+                            <point x="0.499051" y="0.980874" />
+                            <point x="0.26945" y="0.806011" />
+                            <point x="0.314991" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="794378054479849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="846095121253918" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500682" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\assetsemua\karakterbaik22\3.png">
+                        <collision-poly>
+                            <point x="0.154639" y="0.0818554" />
+                            <point x="0.5" y="0.0381992" />
+                            <point x="0.548969" y="0.238745" />
+                            <point x="0.801546" y="0.499318" />
+                            <point x="0.976804" y="0.987722" />
+                            <point x="0.5" y="0.802183" />
+                            <point x="0.0850515" y="0.95498" />
+                            <point x="0.195876" y="0.499318" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShintaKet" sid="270535232854763">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="317898972004786" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\Shinta ket.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ket" sid="891633775427477">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="820205057561146" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\ket.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="anomanKet" sid="180136361233485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849959527618762" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\anoman ket.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LesmanaKet" sid="349407057617198">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="641614177758270" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\Lesmana ket.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wayangDursasana" sid="822722932063960">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="199207432600420" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="514611084766451">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="942368174775891" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\wayang jahat\wayang dursasana 2.png">
+                        <collision-poly>
+                            <point x="0.191489" y="0.144" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.670213" y="0.248" />
+                            <point x="0.819149" y="0.496" />
+                            <point x="0.87234" y="0.904" />
+                            <point x="0.5" y="1" />
+                            <point x="0.255319" y="0.808" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wayangRama" sid="752648570729314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="197095924755058" speed="5">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\ASSET WAYANG\dayat ganteng\aset baru\wayang baik\wayang rama 2.png">
+                        <collision-poly>
+                            <point x="0.211268" y="0.115385" />
+                            <point x="0.492958" y="0.123077" />
+                            <point x="0.690141" y="0.169231" />
+                            <point x="0.943662" y="0.5" />
+                            <point x="0.873239" y="0.930769" />
+                            <point x="0.492958" y="0.9" />
+                            <point x="0.183099" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ramaKet" sid="143493736453023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487017165878291" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\rama ket.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="credit" sid="858444808604102">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773058279452174" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500732" original-source="F:\Kuliah ku\Semester 6\Pemrograman Game\baru\credit.png">
+                        <collision-poly>
+                            <point x="0.0102828" y="0.011713" />
+                            <point x="0.989717" y="0.011713" />
+                            <point x="0.989717" y="0.988287" />
+                            <point x="0.0102828" y="0.988287" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="811387723564376">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="shadedDark" sid="735754400397826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763919392073885" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\projek game\Platformer\Control\shadedDark\shadedDark11.png">
+                        <collision-poly>
+                            <point x="0.14375" y="0.14375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85625" y="0.85625" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14375" y="0.85625" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="817221751152052">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="650784170238445">
+            <plugin id="Button" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Level1.xml</layout>
+        <layout>Level2.xml</layout>
+        <layout>Level3.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event Layout 1.xml</event-sheet>
+        <event-sheet>Event Level 1.xml</event-sheet>
+        <event-sheet>Event Level 2.xml</event-sheet>
+        <event-sheet>Event Level 3.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="7">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="70" />
+        <global-instance type="Audio" uid="378">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="Luk-Luk Lumbu (Instrumen Angklung Banyuwangi).m4a" />
+        <file name="Luk-Luk Lumbu (Instrumen Angklung Banyuwangi).ogg" />
+        <file name="loncat2.m4a" />
+        <file name="noisecreations_SFX-NCFREE02_Flabby-Burd.m4a" />
+        <file name="loncat2.ogg" />
+        <file name="noisecreations_SFX-NCFREE02_Flabby-Burd.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

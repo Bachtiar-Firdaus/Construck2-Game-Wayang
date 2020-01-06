@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Layout 1</name>
+    <events>
+        <event-block sid="3182903161672715">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7562763386891257" type="Touch">
+                    <param id="0" name="Object">TOMBOLMAIN</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8778611266261882" type="System">
+                    <param id="0" name="Layout">Level1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="672442662318562">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="829373179575793" type="Touch" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="779602390019574" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="707492707043237" type="credit">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="209026746959196">
+            <conditions>
+                <condition id="17" name="On tap object" sid="846088394438489" type="Touch">
+                    <param id="0" name="Object">credit</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="539329425972462" type="System">
+                    <param id="0" name="Layer">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="488727790168668" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="622324906299827" type="credit">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

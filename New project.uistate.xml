@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Level1</layout>
+        <layout order="2">Level2</layout>
+        <layout order="4">Level3</layout>
+        <layout order="6">Layout 1</layout>
+        <event-sheet order="1">Event Level 1</event-sheet>
+        <event-sheet order="3">Event Level 2</event-sheet>
+        <event-sheet active="1" order="5">Event Level 3</event-sheet>
+        <event-sheet order="7">Event Layout 1</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/TITLE/" />
+        <folder expanded="1" path="animation-folder/TOMBOLMAIN/" />
+        <folder expanded="1" path="animation-folder/TOMBOLKREDIT/" />
+        <folder expanded="1" path="animation-folder/musuh/" />
+        <folder expanded="1" path="animation-folder/player/" />
+        <folder expanded="1" path="animation-folder/coin/" />
+        <folder expanded="1" path="animation-folder/gambarhati/" />
+        <folder expanded="1" path="animation-folder/kris/" />
+        <folder expanded="1" path="animation-folder/loncatanKecil/" />
+        <folder expanded="1" path="animation-folder/rintangan/" />
+        <folder expanded="1" path="animation-folder/rintangan2/" />
+        <folder expanded="1" path="animation-folder/rintangan3/" />
+        <folder expanded="1" path="animation-folder/portal/" />
+        <folder expanded="1" path="animation-folder/batas/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/kiri/" />
+        <folder expanded="1" path="animation-folder/kanan/" />
+        <folder expanded="1" path="animation-folder/loncat/" />
+        <folder expanded="1" path="animation-folder/tembak/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/wayangAdipatiKarna/" />
+        <folder expanded="1" path="animation-folder/penjara/" />
+        <folder expanded="1" path="animation-folder/background/" />
+        <folder expanded="1" path="animation-folder/btnReload/" />
+        <folder expanded="1" path="animation-folder/panahNext/" />
+        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/Sprite7/" />
+        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/ShintaKet/" />
+        <folder expanded="1" path="animation-folder/ket/" />
+        <folder expanded="1" path="animation-folder/anomanKet/" />
+        <folder expanded="1" path="animation-folder/LesmanaKet/" />
+        <folder expanded="1" path="animation-folder/wayangDursasana/" />
+        <folder expanded="1" path="animation-folder/wayangRama/" />
+        <folder expanded="1" path="animation-folder/ramaKet/" />
+        <folder expanded="1" path="animation-folder/credit/" />
+        <folder expanded="1" path="animation-folder/shadedDark/" />
+    </folders-expanded>
+</c2uistate>

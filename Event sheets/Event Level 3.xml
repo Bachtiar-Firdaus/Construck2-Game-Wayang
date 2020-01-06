@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Level 3</name>
+    <events>
+        <event-block sid="477477660521914">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="638710844324874" type="player" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="884941718716838" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Value">nyawa -1</param>
+                </action>
+                <action id="0" name="Set text" sid="544612932559075" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+                <action id="-16" name="Wait" sid="912656476549138" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-3" name="Set position" sid="880574233136944" type="player">
+                    <param id="0" name="X">1204</param>
+                    <param id="1" name="Y">815</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="640852853728249">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="181750755819975" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="699042390283841" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+                <action id="0" name="Play" sid="427888802039419" type="Audio">
+                    <param id="0" name="Audio file">Luk-Luk Lumbu (Instrumen Angklung Banyuwangi)</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="238946096260350">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="482510000975064" type="player" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="183062675060946" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="926033189198456" type="System">
+                    <param id="0" name="Seconds">1.5</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="479472682474533" type="System" />
+                <action id="-21" name="Reset global variables" sid="396073575948039" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="289364484742017">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="440375561453393" type="player">
+                    <param id="0" name="Object">coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="214178760930456" type="coin" />
+                <action id="-9" name="Set value" sid="468967627300653" type="System">
+                    <param id="0" name="Variable">coin</param>
+                    <param id="1" name="Value">coin +1</param>
+                </action>
+                <action id="0" name="Set text" sid="863466744265729" type="ncoin">
+                    <param id="0" name="Text">coin</param>
+                </action>
+                <action id="0" name="Play" sid="711496770498322" type="Audio">
+                    <param id="0" name="Audio file">noisecreations_SFX-NCFREE02_Flabby-Burd</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="466337970124736">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="301017245519318" type="player">
+                    <param id="0" name="Object">kris</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="227833451148324" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="582725409396184" type="kris" />
+                <action id="-9" name="Set value" sid="471232456385830" type="System">
+                    <param id="0" name="Variable">kriss</param>
+                    <param id="1" name="Value">kriss +1</param>
+                </action>
+                <action id="0" name="Set text" sid="279789288608724" type="nkris">
+                    <param id="0" name="Text">kriss</param>
+                </action>
+                <action id="0" name="Play" sid="647132325774349" type="Audio">
+                    <param id="0" name="Audio file">noisecreations_SFX-NCFREE02_Flabby-Burd</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="980682236878736">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="592184806916063" type="player">
+                    <param id="0" name="Object">rintangan3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="570870328086461" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Value">nyawa -1</param>
+                </action>
+                <action id="0" name="Set text" sid="916359690438542" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926030876299671">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="231219189282166" type="System">
+                    <param id="0" name="Variable">kriss</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="234700537413277">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="686171984584562" type="player">
+                            <param id="0" name="Object">wayangDursasana</param>
+                        </condition>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="289794080402989" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="667483165060382" type="wayangDursasana" />
+                    </actions>
+                </event-block>
+                <event-block sid="490445526864218">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="124233194327372" type="player">
+                            <param id="0" name="Object">wayangDursasana</param>
+                        </condition>
+                        <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="207813157883009" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="441243326321476" type="System">
+                            <param id="0" name="Variable">nyawa</param>
+                            <param id="1" name="Value">nyawa -1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="915579117376965" type="nyawa">
+                            <param id="0" name="Text">nyawa</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="642640230793242">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="994625005923159" type="player">
+                            <param id="0" name="Object">penjara</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="857591637372636" type="penjara" />
+                        <action id="6" name="Stop" sid="949339772662064" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="116701756897409">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="565369901262691" type="System">
+                    <param id="0" name="Variable">kriss</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="765975877579361">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="392520154330620" type="player">
+                            <param id="0" name="Object">wayangDursasana</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="402702080723402" type="System">
+                            <param id="0" name="Variable">nyawa</param>
+                            <param id="1" name="Value">nyawa -1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="670242258489148" type="nyawa">
+                            <param id="0" name="Text">nyawa</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="580325171885286">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="529093642528834" type="penjara" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="395147791524406" type="portal">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="581595485364878" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="256662536363800" type="ramaKet">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="461481822698048">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="380353434416264" type="player">
+                    <param id="0" name="Object">portal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="949033992530940" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="892303276190214" type="btnReload">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="787903743044853" type="panahNext">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469117629475084">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="310526683548744" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="193803262476702" type="player">
+                    <param id="0" name="Animation">&quot;jalankanan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="292538388385670">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="881072343743795" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="746381539599966" type="player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="147333263314602">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="557007355569770" type="player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="329164969187397" type="player">
+                    <param id="0" name="Animation">&quot;loncat&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="781943094512940" type="Audio">
+                    <param id="0" name="Audio file">loncat2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="568820985505468">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="299614030219654" type="player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="700913161039940">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="220909089472349" type="player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="332664099801147" type="player">
+                            <param id="0" name="Animation">&quot;jalankanan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="867975785541401">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="512868475348907" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="326717867169672" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="609158509458179">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="564109961518190" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="711473429193868" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="128831293812688">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="476158704268282" type="musuh" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="508154269597655">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="396480614853642" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="481207059270144" type="musuh">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="286599641600066" type="musuh">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="501081114939964">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="509243873899325" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="856354511808051" type="musuh">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="267582458038407" type="musuh">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="525503490890525">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="869316979244867" type="musuh">
+                    <param id="0" name="Object">batas</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="881920749643610">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="744022757840779" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="186752226480308" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="297636427685872">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="590725984101972" type="musuh">
+                    <param id="0" name="Object">loncatanKecil</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="850916977598347">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="120388933927560" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;left&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="143427012145532" type="musuh">
+                            <param id="0" name="Instance variable">move</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="949904957919731">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="895647602419682" type="musuh">
+                    <param id="0" name="Object">player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="576989415311345" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Value">nyawa -1</param>
+                </action>
+                <action id="0" name="Set text" sid="632476009842462" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="214018143535934">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="210775418561946" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="485150510526179" type="player" />
+                <action id="-4" name="Set layer visible" sid="758876425787260" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="767460530064478" type="btnReload">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="900286616857332">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="450600920962768" type="Touch">
+                    <param id="0" name="Object">kiri</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="721288269281290" type="player">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="183313202506237" type="player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339290103752453">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="706999218292348" type="Touch">
+                    <param id="0" name="Object">kanan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="631965756629123" type="player">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="993663262703064" type="player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="784502110580846">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="272248259469864" type="Touch">
+                    <param id="0" name="Object">loncat</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="594434309281522" type="player">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="985325677735056">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="532065644926994" type="player">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="733325123306964" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Value">nyawa -1</param>
+                </action>
+                <action id="0" name="Set text" sid="758626893073802" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="193255972788019">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="765222532926427" type="player">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="783568695343043" type="System">
+                    <param id="0" name="Variable">nyawa</param>
+                    <param id="1" name="Value">nyawa -1</param>
+                </action>
+                <action id="0" name="Set text" sid="830552155842492" type="nyawa">
+                    <param id="0" name="Text">nyawa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="195465048774955">
+            <conditions>
+                <condition id="17" name="On tap object" sid="633532193579681" type="Touch">
+                    <param id="0" name="Object">btnReload</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="654455808223865">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="749719844958742" type="System">
+                            <param id="0" name="Layer">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="837724094169487" type="System" />
+                        <action id="-21" name="Reset global variables" sid="304012039756264" type="System" />
+                        <action id="-4" name="Set layer visible" sid="453567687313856" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="977420483105996">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="775152872980041" type="System">
+                            <param id="0" name="Layer">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="916440495995740" type="System" />
+                        <action id="-21" name="Reset global variables" sid="351764245300625" type="System" />
+                        <action id="-4" name="Set layer visible" sid="197090810069790" type="System">
+                            <param id="0" name="Layer">4</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="364011151809137">
+            <conditions>
+                <condition id="17" name="On tap object" sid="790160823905493" type="Touch">
+                    <param id="0" name="Object">panahNext</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="223839088261749" type="System" />
+                <action id="-4" name="Set layer visible" sid="422760212719447" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="314581537596241" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="749711741199194" type="System">
+                    <param id="0" name="Variable">stage</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="287905834767838">
+            <conditions>
+                <condition id="17" name="On tap object" sid="499103104850951" type="Touch">
+                    <param id="0" name="Object">ramaKet</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="244637589340254" type="System">
+                    <param id="0" name="Layer">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="466676040687762" type="System">
+                    <param id="0" name="Layer">5</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
